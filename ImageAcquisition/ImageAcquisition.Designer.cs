@@ -36,7 +36,7 @@
             this.ScanDev = new System.Windows.Forms.Button();
             this.OpenDev = new System.Windows.Forms.Button();
             this.DevNameCombo = new System.Windows.Forms.ComboBox();
-            this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.pictureBoxMain = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Configuration = new System.Windows.Forms.GroupBox();
             this.GrabTimeout = new System.Windows.Forms.TextBox();
@@ -59,7 +59,7 @@
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.General.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).BeginInit();
             this.Configuration.SuspendLayout();
             this.DisplayImage.SuspendLayout();
             this.SaveImage.SuspendLayout();
@@ -144,14 +144,14 @@
             this.DevNameCombo.Size = new System.Drawing.Size(201, 21);
             this.DevNameCombo.TabIndex = 0;
             // 
-            // pictureBox
+            // pictureBoxMain
             // 
-            this.pictureBox.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox.Location = new System.Drawing.Point(249, 6);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(718, 604);
-            this.pictureBox.TabIndex = 16;
-            this.pictureBox.TabStop = false;
+            this.pictureBoxMain.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBoxMain.Location = new System.Drawing.Point(249, 6);
+            this.pictureBoxMain.Name = "pictureBoxMain";
+            this.pictureBoxMain.Size = new System.Drawing.Size(718, 604);
+            this.pictureBoxMain.TabIndex = 16;
+            this.pictureBoxMain.TabStop = false;
             // 
             // label1
             // 
@@ -364,7 +364,7 @@
             this.Controls.Add(this.DisplayImage);
             this.Controls.Add(this.Configuration);
             this.Controls.Add(this.General);
-            this.Controls.Add(this.pictureBox);
+            this.Controls.Add(this.pictureBoxMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ImageAcquisition";
             this.Text = "RSA ImageAcquisition";
@@ -373,7 +373,7 @@
             this.Resize += new System.EventHandler(this.ImageAcquisition_Resize);
             this.General.ResumeLayout(false);
             this.General.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).EndInit();
             this.Configuration.ResumeLayout(false);
             this.Configuration.PerformLayout();
             this.DisplayImage.ResumeLayout(false);
@@ -397,7 +397,7 @@
         private System.Windows.Forms.Button ScanDev;
         private System.Windows.Forms.Button OpenDev;
         private System.Windows.Forms.ComboBox DevNameCombo;
-        private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.PictureBox pictureBoxMain;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox Configuration;
         private System.Windows.Forms.TextBox EditWait;

@@ -46,7 +46,7 @@ namespace BasicFunction
 			// true : user dvpOpenByUserId open the camear
 			UserDefinedName.Checked = false;
 			
-            m_ptr_wnd = pictureBox.Handle;
+            m_ptr_wnd = pictureBoxMain.Handle;
 			GainEdit.DecimalPlaces = 3;
 			GainEdit.Increment = 0.125M;
             System.Timers.Timer t = new System.Timers.Timer(500);
@@ -296,7 +296,7 @@ namespace BasicFunction
 				Debug.Assert(status == dvpStatus.DVP_STATUS_OK);
                 m_handle = 0;
 				BUTTON_SAVE.Enabled = false;
-				pictureBox.Refresh();
+				pictureBoxMain.Refresh();
             }
 
             UpdateControls();
@@ -952,16 +952,16 @@ namespace BasicFunction
 				status = DVPCamera.dvpGetRoi(m_handle, ref roi);
 				Debug.Assert(status == dvpStatus.DVP_STATUS_OK);
 
-				pictureBox.Width = this.Width - pictureBox.Left;
-				pictureBox.Height = this.Height - pictureBox.Top;
+				pictureBoxMain.Width = this.Width - pictureBoxMain.Left;
+				pictureBoxMain.Height = this.Height - pictureBoxMain.Top;
 
-				if (pictureBox.Width * roi.H > pictureBox.Height * roi.W )
+				if (pictureBoxMain.Width * roi.H > pictureBoxMain.Height * roi.W )
 				{
-					pictureBox.Width = pictureBox.Height * roi.W / roi.H;
+					pictureBoxMain.Width = pictureBoxMain.Height * roi.W / roi.H;
 				}
 				else
 				{
-					pictureBox.Height = pictureBox.Width * roi.H / roi.W;
+					pictureBoxMain.Height = pictureBoxMain.Width * roi.H / roi.W;
 				}
 			}
 		}

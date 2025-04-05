@@ -69,7 +69,7 @@ namespace ImageAcquisition
 			GrabTimeout.Text = "1";
 			EditWait.Text = "1000";
 
-			m_ptr_wnd = pictureBox.Handle;
+			m_ptr_wnd = pictureBoxMain.Handle;
         }
 
         public void theout(object source, System.Timers.ElapsedEventArgs e)
@@ -314,7 +314,7 @@ namespace ImageAcquisition
                 status = DVPCamera.dvpClose(m_handle);
 				Debug.Assert(status == dvpStatus.DVP_STATUS_OK);
                 m_handle = 0;
-				pictureBox.Refresh();
+				pictureBoxMain.Refresh();
             }
 
             UpdateControls();
@@ -603,16 +603,16 @@ namespace ImageAcquisition
 				status = DVPCamera.dvpGetRoi(m_handle, ref roi);
 				Debug.Assert(status == dvpStatus.DVP_STATUS_OK);
 
-				pictureBox.Width = this.Width - pictureBox.Left;
-				pictureBox.Height = this.Height - pictureBox.Top;
+				pictureBoxMain.Width = this.Width - pictureBoxMain.Left;
+				pictureBoxMain.Height = this.Height - pictureBoxMain.Top;
 
-				if (pictureBox.Width * roi.H > pictureBox.Height * roi.W)
+				if (pictureBoxMain.Width * roi.H > pictureBoxMain.Height * roi.W)
 				{
-					pictureBox.Width = pictureBox.Height * roi.W / roi.H;
+					pictureBoxMain.Width = pictureBoxMain.Height * roi.W / roi.H;
 				}
 				else
 				{
-					pictureBox.Height = pictureBox.Width * roi.H / roi.W;
+					pictureBoxMain.Height = pictureBoxMain.Width * roi.H / roi.W;
 				}
 			}
 		}

@@ -34,7 +34,7 @@
             this.BUTTON_SCAN = new System.Windows.Forms.Button();
             this.BUTTON_START = new System.Windows.Forms.Button();
             this.BUTTON_PROPERTY = new System.Windows.Forms.Button();
-            this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.pictureBoxMain = new System.Windows.Forms.PictureBox();
             this.BUTTON_SAVE = new System.Windows.Forms.Button();
             this.COMBO_FLICK = new System.Windows.Forms.ComboBox();
             this.General = new System.Windows.Forms.GroupBox();
@@ -58,11 +58,11 @@
             this.AWBEnable = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).BeginInit();
             this.General.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -127,18 +127,18 @@
             this.BUTTON_PROPERTY.UseVisualStyleBackColor = true;
             this.BUTTON_PROPERTY.Click += new System.EventHandler(this.BUTTON_PROPERTY_Click);
             // 
-            // pictureBox
+            // pictureBoxMain
             // 
-            this.pictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pictureBoxMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox.Location = new System.Drawing.Point(248, 8);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(829, 713);
-            this.pictureBox.TabIndex = 6;
-            this.pictureBox.TabStop = false;
-            this.pictureBox.Click += new System.EventHandler(this.pictureBox_Click);
+            this.pictureBoxMain.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBoxMain.Location = new System.Drawing.Point(248, 8);
+            this.pictureBoxMain.Name = "pictureBoxMain";
+            this.pictureBoxMain.Size = new System.Drawing.Size(829, 713);
+            this.pictureBoxMain.TabIndex = 6;
+            this.pictureBoxMain.TabStop = false;
+            this.pictureBoxMain.Click += new System.EventHandler(this.pictureBox_Click);
             // 
             // BUTTON_SAVE
             // 
@@ -388,6 +388,12 @@
             this.statusStrip1.TabIndex = 25;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // toolStripStatusLabel4
+            // 
+            this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
+            this.toolStripStatusLabel4.Size = new System.Drawing.Size(69, 17);
+            this.toolStripStatusLabel4.Text = "Powered by";
+            // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -407,12 +413,6 @@
             this.toolStripStatusLabel3.Size = new System.Drawing.Size(50, 17);
             this.toolStripStatusLabel3.Text = "Ver 0.0.1";
             // 
-            // toolStripStatusLabel4
-            // 
-            this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
-            this.toolStripStatusLabel4.Size = new System.Drawing.Size(69, 17);
-            this.toolStripStatusLabel4.Text = "Powered by";
-            // 
             // BasicFunction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -428,12 +428,12 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.General);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.pictureBox);
+            this.Controls.Add(this.pictureBoxMain);
             this.Name = "BasicFunction";
             this.Text = "RSA BasicFunction OCR - Demo";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.BasicFunction_FormClosing);
             this.Resize += new System.EventHandler(this.BasicFunction_Resize);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).EndInit();
             this.General.ResumeLayout(false);
             this.General.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -462,7 +462,7 @@
         private System.Windows.Forms.Button BUTTON_SCAN;
         private System.Windows.Forms.Button BUTTON_START;
         private System.Windows.Forms.Button BUTTON_PROPERTY;
-		private System.Windows.Forms.PictureBox pictureBox;
+		private System.Windows.Forms.PictureBox pictureBoxMain;
 		private System.Windows.Forms.Button BUTTON_SAVE;
         private System.Windows.Forms.ComboBox COMBO_FLICK;
         private System.Windows.Forms.GroupBox General;

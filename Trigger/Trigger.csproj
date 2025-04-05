@@ -97,6 +97,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Trigger.resx">
       <DependentUpon>Trigger.cs</DependentUpon>
@@ -110,6 +111,54 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_off_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_on_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e26d873ee68fbcd9dc1c40d8b0c6b3b4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green_tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parcel_error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parcel_mazad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parcel_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parcel_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red_cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scaler_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scaler_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scaler_warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spinner.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume_enable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume_mute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

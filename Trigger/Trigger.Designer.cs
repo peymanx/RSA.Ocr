@@ -61,16 +61,42 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.EnableOut = new System.Windows.Forms.CheckBox();
-            this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.pictureBoxMain = new System.Windows.Forms.PictureBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.فایلToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ذخیرهگزارشدراکسلToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
+            this.خروجToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ابزارToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.تستارتباطباEcourierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.menuLog = new System.Windows.Forms.ToolStripMenuItem();
+            this.پاککردنلاگترازوToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.فایلهایپیکربندیToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.دیتابیسToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.تنظیماتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
+            this.صفرکردنشمارندهToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolNotMazadCounter = new System.Windows.Forms.ToolStripMenuItem();
+            this.کمکToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.دربارهماToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.picVolume = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.picOnOff = new System.Windows.Forms.PictureBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.General.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TriggerDelay)).BeginInit();
@@ -78,10 +104,17 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EditFilter)).BeginInit();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).BeginInit();
             this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox4.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVolume)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picOnOff)).BeginInit();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // General
@@ -92,7 +125,7 @@
             this.General.Controls.Add(this.ScanDev);
             this.General.Controls.Add(this.OpenDev);
             this.General.Controls.Add(this.DevNameCombo);
-            this.General.Location = new System.Drawing.Point(2, 150);
+            this.General.Location = new System.Drawing.Point(6, 110);
             this.General.Name = "General";
             this.General.Size = new System.Drawing.Size(260, 105);
             this.General.TabIndex = 18;
@@ -171,7 +204,7 @@
             this.groupBox1.Controls.Add(this.SoftTriggerFire);
             this.groupBox1.Controls.Add(this.LoopTrigger);
             this.groupBox1.Controls.Add(this.TriggerMode);
-            this.groupBox1.Location = new System.Drawing.Point(2, 261);
+            this.groupBox1.Location = new System.Drawing.Point(6, 221);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(259, 133);
             this.groupBox1.TabIndex = 19;
@@ -282,7 +315,7 @@
             this.groupBox2.Controls.Add(this.InputSignalType);
             this.groupBox2.Controls.Add(this.InputIO);
             this.groupBox2.Controls.Add(this.EnableIn);
-            this.groupBox2.Location = new System.Drawing.Point(3, 401);
+            this.groupBox2.Location = new System.Drawing.Point(7, 361);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(259, 143);
             this.groupBox2.TabIndex = 20;
@@ -376,7 +409,7 @@
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.EnableOut);
-            this.groupBox3.Location = new System.Drawing.Point(3, 551);
+            this.groupBox3.Location = new System.Drawing.Point(7, 511);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(259, 101);
             this.groupBox3.TabIndex = 21;
@@ -432,17 +465,17 @@
             this.EnableOut.UseVisualStyleBackColor = true;
             this.EnableOut.CheckedChanged += new System.EventHandler(this.EnableOut_CheckedChanged);
             // 
-            // pictureBox
+            // pictureBoxMain
             // 
-            this.pictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pictureBoxMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox.Location = new System.Drawing.Point(272, 10);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(804, 643);
-            this.pictureBox.TabIndex = 22;
-            this.pictureBox.TabStop = false;
+            this.pictureBoxMain.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBoxMain.Location = new System.Drawing.Point(272, 118);
+            this.pictureBoxMain.Name = "pictureBoxMain";
+            this.pictureBoxMain.Size = new System.Drawing.Size(804, 537);
+            this.pictureBoxMain.TabIndex = 22;
+            this.pictureBoxMain.TabStop = false;
             // 
             // statusStrip1
             // 
@@ -482,21 +515,10 @@
             this.toolStripStatusLabel3.Size = new System.Drawing.Size(50, 17);
             this.toolStripStatusLabel3.Text = "Ver 0.0.1";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(28)))));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 134);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 26;
-            this.pictureBox1.TabStop = false;
-            // 
             // textBox1
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Font = new System.Drawing.Font("B Nazanin", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.textBox1.Font = new System.Drawing.Font("B Nazanin", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.textBox1.Location = new System.Drawing.Point(3, 16);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -510,7 +532,7 @@
             this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox4.Controls.Add(this.textBox1);
-            this.groupBox4.Location = new System.Drawing.Point(272, 659);
+            this.groupBox4.Location = new System.Drawing.Point(272, 662);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(804, 87);
             this.groupBox4.TabIndex = 29;
@@ -519,30 +541,282 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("B Titr", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.Location = new System.Drawing.Point(8, 659);
+            this.label1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("B Titr", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.Location = new System.Drawing.Point(3, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(258, 84);
+            this.label1.Size = new System.Drawing.Size(253, 109);
             this.label1.TabIndex = 30;
-            this.label1.Text = "منطقه ؟";
+            this.label1.Text = "منطقه";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.LightGray;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.فایلToolStripMenuItem,
+            this.ابزارToolStripMenuItem,
+            this.کمکToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 80);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1084, 24);
+            this.menuStrip1.TabIndex = 251;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // فایلToolStripMenuItem
+            // 
+            this.فایلToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ذخیرهگزارشدراکسلToolStripMenuItem,
+            this.toolStripMenuItem3,
+            this.خروجToolStripMenuItem});
+            this.فایلToolStripMenuItem.Name = "فایلToolStripMenuItem";
+            this.فایلToolStripMenuItem.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.فایلToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.فایلToolStripMenuItem.Text = "File";
+            // 
+            // ذخیرهگزارشدراکسلToolStripMenuItem
+            // 
+            this.ذخیرهگزارشدراکسلToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ذخیرهگزارشدراکسلToolStripMenuItem.Image")));
+            this.ذخیرهگزارشدراکسلToolStripMenuItem.Name = "ذخیرهگزارشدراکسلToolStripMenuItem";
+            this.ذخیرهگزارشدراکسلToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ذخیرهگزارشدراکسلToolStripMenuItem.Text = "ذخیره گزارش در اکسل";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(177, 6);
+            // 
+            // خروجToolStripMenuItem
+            // 
+            this.خروجToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("خروجToolStripMenuItem.Image")));
+            this.خروجToolStripMenuItem.Name = "خروجToolStripMenuItem";
+            this.خروجToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.خروجToolStripMenuItem.Text = "خروج";
+            // 
+            // ابزارToolStripMenuItem
+            // 
+            this.ابزارToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.تستارتباطباEcourierToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.menuLog,
+            this.پاککردنلاگترازوToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.فایلهایپیکربندیToolStripMenuItem,
+            this.toolStripMenuItem4,
+            this.صفرکردنشمارندهToolStripMenuItem,
+            this.toolNotMazadCounter});
+            this.ابزارToolStripMenuItem.Name = "ابزارToolStripMenuItem";
+            this.ابزارToolStripMenuItem.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.ابزارToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.ابزارToolStripMenuItem.Text = "Tools";
+            // 
+            // تستارتباطباEcourierToolStripMenuItem
+            // 
+            this.تستارتباطباEcourierToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("تستارتباطباEcourierToolStripMenuItem.Image")));
+            this.تستارتباطباEcourierToolStripMenuItem.Name = "تستارتباطباEcourierToolStripMenuItem";
+            this.تستارتباطباEcourierToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.تستارتباطباEcourierToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.تستارتباطباEcourierToolStripMenuItem.Text = "تست ارتباط با e-courier";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(240, 6);
+            // 
+            // menuLog
+            // 
+            this.menuLog.Image = ((System.Drawing.Image)(resources.GetObject("menuLog.Image")));
+            this.menuLog.Name = "menuLog";
+            this.menuLog.Size = new System.Drawing.Size(243, 22);
+            this.menuLog.Text = "نمایش لاگ ترازو";
+            // 
+            // پاککردنلاگترازوToolStripMenuItem
+            // 
+            this.پاککردنلاگترازوToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("پاککردنلاگترازوToolStripMenuItem.Image")));
+            this.پاککردنلاگترازوToolStripMenuItem.Name = "پاککردنلاگترازوToolStripMenuItem";
+            this.پاککردنلاگترازوToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.پاککردنلاگترازوToolStripMenuItem.Text = "پاک کردن لاگ ترازو";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(240, 6);
+            // 
+            // فایلهایپیکربندیToolStripMenuItem
+            // 
+            this.فایلهایپیکربندیToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.دیتابیسToolStripMenuItem,
+            this.تنظیماتToolStripMenuItem});
+            this.فایلهایپیکربندیToolStripMenuItem.Name = "فایلهایپیکربندیToolStripMenuItem";
+            this.فایلهایپیکربندیToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.فایلهایپیکربندیToolStripMenuItem.Text = "فایل های پیکربندی";
+            // 
+            // دیتابیسToolStripMenuItem
+            // 
+            this.دیتابیسToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("دیتابیسToolStripMenuItem.Image")));
+            this.دیتابیسToolStripMenuItem.Name = "دیتابیسToolStripMenuItem";
+            this.دیتابیسToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.دیتابیسToolStripMenuItem.Text = "پایگاه داده ها";
+            // 
+            // تنظیماتToolStripMenuItem
+            // 
+            this.تنظیماتToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("تنظیماتToolStripMenuItem.Image")));
+            this.تنظیماتToolStripMenuItem.Name = "تنظیماتToolStripMenuItem";
+            this.تنظیماتToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.تنظیماتToolStripMenuItem.Text = "تنظیمات";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(240, 6);
+            // 
+            // صفرکردنشمارندهToolStripMenuItem
+            // 
+            this.صفرکردنشمارندهToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("صفرکردنشمارندهToolStripMenuItem.Image")));
+            this.صفرکردنشمارندهToolStripMenuItem.Name = "صفرکردنشمارندهToolStripMenuItem";
+            this.صفرکردنشمارندهToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.صفرکردنشمارندهToolStripMenuItem.Text = "صفر کردن شمارنده";
+            // 
+            // toolNotMazadCounter
+            // 
+            this.toolNotMazadCounter.Checked = true;
+            this.toolNotMazadCounter.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.toolNotMazadCounter.Name = "toolNotMazadCounter";
+            this.toolNotMazadCounter.Size = new System.Drawing.Size(243, 22);
+            this.toolNotMazadCounter.Text = "عدم رشد شمارنده با بسته‌های مازاد";
+            // 
+            // کمکToolStripMenuItem
+            // 
+            this.کمکToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.دربارهماToolStripMenuItem});
+            this.کمکToolStripMenuItem.Name = "کمکToolStripMenuItem";
+            this.کمکToolStripMenuItem.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.کمکToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.کمکToolStripMenuItem.Text = "Help";
+            // 
+            // دربارهماToolStripMenuItem
+            // 
+            this.دربارهماToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("دربارهماToolStripMenuItem.Image")));
+            this.دربارهماToolStripMenuItem.Name = "دربارهماToolStripMenuItem";
+            this.دربارهماToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.دربارهماToolStripMenuItem.Text = "درباره ما";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(16)))), ((int)(((byte)(29)))));
+            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.picVolume);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.picLogo);
+            this.panel1.Controls.Add(this.picOnOff);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1084, 80);
+            this.panel1.TabIndex = 250;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.BackColor = System.Drawing.Color.LightGray;
+            this.label13.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(730, 84);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(76, 16);
+            this.label13.TabIndex = 258;
+            this.label13.Text = "هشدار صوتی";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(715, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(77, 60);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 257;
+            this.pictureBox3.TabStop = false;
+            // 
+            // picVolume
+            // 
+            this.picVolume.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.picVolume.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picVolume.Image = global::Trigger.Properties.Resources.volume_enable;
+            this.picVolume.Location = new System.Drawing.Point(887, 7);
+            this.picVolume.Name = "picVolume";
+            this.picVolume.Size = new System.Drawing.Size(77, 67);
+            this.picVolume.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picVolume.TabIndex = 235;
+            this.picVolume.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(806, 9);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(73, 64);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 233;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // picLogo
+            // 
+            this.picLogo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
+            this.picLogo.Location = new System.Drawing.Point(62, 14);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(143, 51);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogo.TabIndex = 232;
+            this.picLogo.TabStop = false;
+            // 
+            // picOnOff
+            // 
+            this.picOnOff.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.picOnOff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picOnOff.Image = global::Trigger.Properties.Resources.btn_on_red;
+            this.picOnOff.Location = new System.Drawing.Point(980, -1);
+            this.picOnOff.Name = "picOnOff";
+            this.picOnOff.Size = new System.Drawing.Size(89, 80);
+            this.picOnOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picOnOff.TabIndex = 4;
+            this.picOnOff.TabStop = false;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox5.Controls.Add(this.label1);
+            this.groupBox5.Location = new System.Drawing.Point(6, 618);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(259, 128);
+            this.groupBox5.TabIndex = 22;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Tehran Zone Identifier";
             // 
             // Trigger
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1084, 780);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox);
+            this.Controls.Add(this.pictureBoxMain);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.General);
             this.Name = "Trigger";
-            this.Text = "RSA Trigger";
+            this.Text = "RSA OCR + Hw Trigger";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Trigger_FormClosing);
             this.Resize += new System.EventHandler(this.Trigger_Resize);
             this.General.ResumeLayout(false);
@@ -556,12 +830,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.EditFilter)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVolume)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picOnOff)).EndInit();
+            this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -597,7 +879,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.CheckBox EnableOut;
-        private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.PictureBox pictureBoxMain;
         private System.Windows.Forms.NumericUpDown TriggerLoop;
         private System.Windows.Forms.NumericUpDown TriggerDelay;
         private System.Windows.Forms.NumericUpDown EditFilter;
@@ -607,10 +889,36 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem فایلToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ذخیرهگزارشدراکسلToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem خروجToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ابزارToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem تستارتباطباEcourierToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem menuLog;
+        private System.Windows.Forms.ToolStripMenuItem پاککردنلاگترازوToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem فایلهایپیکربندیToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem دیتابیسToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem تنظیماتToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem صفرکردنشمارندهToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolNotMazadCounter;
+        private System.Windows.Forms.ToolStripMenuItem کمکToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem دربارهماToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox picVolume;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox picLogo;
+        private System.Windows.Forms.PictureBox picOnOff;
+        private System.Windows.Forms.GroupBox groupBox5;
     }
 }
 
